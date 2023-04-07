@@ -96,8 +96,8 @@ def deleteuser(request, id):
 #function for sending data
 def send_mail_after_registration(email , token):
 
-    subject = 'CEA E_Library Your accounts need to be verified'
-    message = f'Hi login through this Link to verify your account http://collegelibrarymanager.herokuapp.com/verify/{token} \n '
+    subject = 'UNHAS E-Library Your accounts need to be verified'
+    message = f'Hi login through this Link to verify your account https://unhas-library.onrender.com//verify/{token} \n '
     email_from = settings.EMAIL_HOST_USER
     recipient_list = [email]
     send_mail(subject, message , email_from ,recipient_list )
