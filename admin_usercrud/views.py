@@ -97,7 +97,7 @@ def deleteuser(request, id):
 def send_mail_after_registration(email , token):
 
     subject = 'UNHAS E-Library Your accounts need to be verified'
-    message = f'Hi login through this Link to verify your account https://unhas-library.onrender.com//verify/{token} \n '
+    message = f'Hi login through this Link to verify your account https://unhas-library.onrender.com/verify/{token} \n '
     email_from = settings.EMAIL_HOST_USER
     recipient_list = [email]
     send_mail(subject, message , email_from ,recipient_list )
